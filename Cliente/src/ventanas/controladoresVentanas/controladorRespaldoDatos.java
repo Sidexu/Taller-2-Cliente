@@ -1,0 +1,24 @@
+package ventanas.controladoresVentanas;
+
+import java.rmi.RemoteException;
+import javax.swing.JOptionPane;
+
+import ventanas.managerIFachada;
+import Excepciones.ExcepcionPersistencia;
+import Excepciones.ExcepcionRMI;
+
+public class controladorRespaldoDatos {
+	
+	public static void respaldoDatos() {
+		try {
+			managerIFachada.getInstancia().getIFachada().respaldoDatos();
+			JOptionPane.showMessageDialog(null,"Se respaldaron los datos correctamente!", "Duck Boat Window", 1);
+		} catch (RemoteException e) {
+			JOptionPane.showMessageDialog(null, "Error en la conexión", "Duck Boat Window", 0);
+		} catch (ExcepcionPersistencia e) {
+			JOptionPane.showMessageDialog(null,e.darMensaje(), "Duck Boat Window", 0);
+		} catch (ExcepcionRMI e) {
+			JOptionPane.showMessageDialog(null,e.darMensaje(), "Duck Boat Window", 0);
+		}
+	}
+}
