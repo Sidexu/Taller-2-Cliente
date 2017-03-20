@@ -20,9 +20,9 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
 
-import valueObjects.VOBoletoTipo;
-import valueObjects.VOBusCant;
-import valueObjects.VOExcursionDisp;
+import Logica.valueObjects.VOBoletoTipo;
+import Logica.valueObjects.VOBusCant;
+import Logica.valueObjects.VOExcursionDisp;
 import ventanas.controladoresVentanas.controladorBoletosVendidosXEx;
 import ventanas.controladoresVentanas.controladorExcursionesXDestino;
 import ventanas.controladoresVentanas.controladorExcursionesXPrecio;
@@ -101,14 +101,7 @@ public class ventanaPrueba {
 		frame.setBounds(100, 100, 1024, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
-		Image img= new ImageIcon(this.getClass().getResource("/iconDuck.png")).getImage();
-				//scrollPane.setViewportView(table1);	
-				
-								//table1.setLayout(new BorderLayout());
-								//panel_listGralBus.add(table1.getTableHeader(), BorderLayout.PAGE_START);
-				
-				
+						
 				
 				final JPanel panel_inicio = new JPanel();
 				panel_inicio.setBackground(Color.WHITE);
@@ -128,6 +121,7 @@ public class ventanaPrueba {
 						panel_12.setLayout(null);
 						
 						JLabel label_2 = new JLabel("");
+						Image img= new ImageIcon(this.getClass().getResource("/iconDuck.png")).getImage();
 						label_2.setIcon(new ImageIcon(img));
 						label_2.setBounds(633, 8, 113, 136);
 						panel_12.add(label_2);

@@ -1,12 +1,13 @@
 package ventanas.controladoresVentanas;
 
 import java.rmi.RemoteException;
+
 import javax.swing.JOptionPane;
 
 import ventanas.managerIFachada;
-import Excepciones.ExcepcionPersistencia;
-import Excepciones.ExcepcionRMI;
-import valueObjects.VOBusCant;
+import Logica.Excepciones.ExcepcionPersistencia;
+import Logica.Excepciones.ExcepcionRMI;
+import Logica.valueObjects.VOBusCant;
 
 
 

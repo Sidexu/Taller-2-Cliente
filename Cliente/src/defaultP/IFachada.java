@@ -2,14 +2,14 @@ package defaultP;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-import valueObjects.VOBoletoTipo;
-import valueObjects.VOBus;
-import valueObjects.VOBusCant;
-import valueObjects.VOExcursion;
-import valueObjects.VOExcursionDisp;
-import Excepciones.ExcepcionBus;
-import Excepciones.ExcepcionExcursion;
-import Excepciones.ExcepcionPersistencia;
+import Logica.Excepciones.ExcepcionBus;
+import Logica.Excepciones.ExcepcionExcursion;
+import Logica.Excepciones.ExcepcionPersistencia;
+import Logica.valueObjects.VOBoletoTipo;
+import Logica.valueObjects.VOBus;
+import Logica.valueObjects.VOBusCant;
+import Logica.valueObjects.VOExcursion;
+import Logica.valueObjects.VOExcursionDisp;
 
 public interface IFachada extends Remote{
 	

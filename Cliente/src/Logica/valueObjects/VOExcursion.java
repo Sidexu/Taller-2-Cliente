@@ -1,4 +1,4 @@
-package valueObjects;
+package Logica.valueObjects;
 import java.io.Serializable;
 
 import defaultP.Hora;

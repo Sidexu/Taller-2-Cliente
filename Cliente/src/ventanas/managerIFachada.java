@@ -7,8 +7,8 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.util.Properties;
 
-import Excepciones.ExcepcionPersistencia;
-import Excepciones.ExcepcionRMI;
+import Logica.Excepciones.ExcepcionPersistencia;
+import Logica.Excepciones.ExcepcionRMI;
 import defaultP.IFachada;
 
 

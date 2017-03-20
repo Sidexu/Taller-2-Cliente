@@ -1,13 +1,14 @@
 package ventanas.controladoresVentanas;
 
 import java.rmi.RemoteException;
+
 import javax.swing.JOptionPane;
 
 import ventanas.managerIFachada;
-import Excepciones.ExcepcionExcursion;
-import Excepciones.ExcepcionPersistencia;
-import Excepciones.ExcepcionRMI;
-import valueObjects.VOExcursionDisp;
+import Logica.Excepciones.ExcepcionExcursion;
+import Logica.Excepciones.ExcepcionPersistencia;
+import Logica.Excepciones.ExcepcionRMI;
+import Logica.valueObjects.VOExcursionDisp;
 
 public class controladorListadoExcursionDisp {
 

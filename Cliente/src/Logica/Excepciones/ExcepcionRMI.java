@@ -1,4 +1,4 @@
-package Excepciones;
+package Logica.Excepciones;
 
 public class ExcepcionRMI extends Exception {
 	private String msg;
