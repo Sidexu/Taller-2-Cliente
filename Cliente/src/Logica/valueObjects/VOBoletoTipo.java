@@ -3,6 +3,10 @@ package Logica.valueObjects;
 import java.io.Serializable;
 
 public class VOBoletoTipo implements Serializable {
+		/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 		private int nro_boleto;
 		private int edad_pas;
 		private String lugar_procedencia;

@@ -4,6 +4,10 @@ import java.io.Serializable;
 import defaultP.Hora;
 
 public class VOExcursion implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String codigo;
 	private String destino;
 	private Hora hr_partida;

@@ -3,6 +3,10 @@ package defaultP;
 import java.io.Serializable;
 
 public class Hora implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int hora;
 	private int min;
 	

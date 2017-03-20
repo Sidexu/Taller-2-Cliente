@@ -29,13 +29,9 @@ public class managerIFachada {
 			fach = (IFachada) Naming.lookup(ruta);
 		}catch (FileNotFoundException e)
 		{
-			throw new ExcepcionPersistencia("Error en persistencia");
+			throw new ExcepcionPersistencia("Error al leer el archivo de configuración");
 		}
-		catch (IOException e)
-		{
-			throw new ExcepcionPersistencia("Error en persistencia");
-		} 
-		catch (NotBoundException e) 
+		catch (NotBoundException | IOException e) 
 		{
 			throw new ExcepcionRMI("Error de comunicacion");
 		}
@@ -44,10 +40,7 @@ public class managerIFachada {
 	public static managerIFachada getInstancia() throws ExcepcionPersistencia, ExcepcionRMI
 	{
 		try{
-			if(instancia == null)
-			{
-				instancia = new managerIFachada();
-			}
+			instancia = new managerIFachada();
 		}catch (ExcepcionPersistencia e){
 			throw new ExcepcionPersistencia(e.darMensaje());
 		} catch (ExcepcionRMI e) {

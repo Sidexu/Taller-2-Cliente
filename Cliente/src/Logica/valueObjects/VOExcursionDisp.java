@@ -5,6 +5,10 @@ import java.io.Serializable;
 import defaultP.Hora;
 
 public class VOExcursionDisp extends VOExcursion implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int cant_disponibles;
 
 	public VOExcursionDisp(String codigo, String destino, Hora hr_partida,
