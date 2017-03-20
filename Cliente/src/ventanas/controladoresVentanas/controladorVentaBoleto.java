@@ -1,14 +1,15 @@
 package ventanas.controladoresVentanas;
 
 import java.rmi.RemoteException;
+
 import javax.swing.JOptionPane;
 
 import ventanas.managerIFachada;
-import Excepciones.ExcepcionBus;
-import Excepciones.ExcepcionExcursion;
-import Excepciones.ExcepcionPersistencia;
-import Excepciones.ExcepcionRMI;
-import valueObjects.VOBoletoTipo;
+import Logica.Excepciones.ExcepcionBus;
+import Logica.Excepciones.ExcepcionExcursion;
+import Logica.Excepciones.ExcepcionPersistencia;
+import Logica.Excepciones.ExcepcionRMI;
+import Logica.valueObjects.VOBoletoTipo;
 
 public class controladorVentaBoleto {
 	
