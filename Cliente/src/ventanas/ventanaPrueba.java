@@ -113,8 +113,7 @@ public class ventanaPrueba {
 				lblNewLabel_25.setFont(new Font("Nirmala UI Semilight", Font.BOLD, 27));
 				lblNewLabel_25.setBounds(28, 27, 754, 37);
 				panel_inicio.add(lblNewLabel_25);
-				
-						
+
 						JPanel panel_12 = new JPanel();
 						panel_12.setBounds(28, 90, 754, 369);
 						panel_inicio.add(panel_12);
